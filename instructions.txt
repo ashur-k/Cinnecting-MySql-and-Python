@@ -1,0 +1,10 @@
+1. Run thi command to impoert user settings, (I have deleted this file and code is sitll working)
+    wget https://raw.githubusercontent.com/Code-Institute-Org/mysql-fix/master/createuser.sh && source ./createuser.sh
+2. Import database: To import Chinook database run this command on terminal
+    wget https://raw.githubusercontent.com/ashur-k/SQL-unleash/master/Chinook_MySql_AutoIncrementPKs.sql
+3. Run this command to populate and install database:
+    mysql -v < Chinook_MySql_AutoIncrementPKs.sql
+4. Run the command to install importnatnt files
+    pip3 install pymysql (if not works try PyMySql)
+5. Run the following command to make requirements file which included all libraries that are used in development
+    pip3 freeze > requirements.txt

@@ -8,7 +8,13 @@
     pip3 install pymysql (if not works try PyMySql)
 5. Run the following command to make requirements file which included all libraries that are used in development
     pip3 freeze > requirements.txt
+6. If you are starting again {technically speaking I never followed this step at first time so see what happens when I run this command}
+    I have run this command (( mysql -ctl start )) and have following error mysql: [ERROR] mysql: unknown option '-l'. but everything is working fine
+    at the moment so I moving on following tuotorial
+7. Follwoing command take me to sql prommpt, I beleive this command some how set my username and password to sql connection
+    mysql -u $C9_USER -p
 
+ 
 Optional commands which are handy sometimes: 
     1.vTo remove something from git ready to push files:
         git rm -r --cached Chinook_MySql_AutoIncrementPKs.sql
@@ -16,4 +22,7 @@ Optional commands which are handy sometimes:
         echo '*.sql' >> .gitignore
     3. another git add command normally I use git add . :
         git add --all
-    
+
+
+Important Notes:
+    Using dictionaires cursours are useful the work better on slow networking computer
